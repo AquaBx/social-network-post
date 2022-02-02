@@ -1,0 +1,85 @@
+body,
+html {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+.body {
+  background: #d53369; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #cbad6d,
+    #d53369
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #cbad6d,
+    #d53369
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 300px;
+  display: 400px;
+  position: relative;
+  user-select: none;
+}
+
+.container,
+.like-container {
+  background: rgba(255, 255, 255, 0.5);
+  border: 3px solid rgba(255, 255, 255, 0.75);
+  border-radius: 2em;
+  transition: 0.3s;
+}
+
+.container:hover {
+  transform: scale(1.02);
+}
+
+.container > img {
+  border-radius: inherit;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  margin: 0;
+}
+
+.container > p {
+  margin: 1em;
+  color: #fff;
+  line-height: 20px;
+  max-height: 100px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+a {
+  color: #0085ff;
+}
+
+.like-container {
+  position: absolute;
+  color: #f8312f;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 1.5em;
+  transform: translate(225px, 225px);
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  padding: 15px 0;
+  color: white;
+  text-align: center;
+  width: 100%;
+  font-weight: bold;
+  text-decoration: underline;
+}
